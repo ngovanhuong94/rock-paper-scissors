@@ -11,8 +11,7 @@
 	<h1>Rock, Paper, Scissors</h1>
 	<h3>Try your lock, win great prizes!*</h3>
 	<p>--------</p>
-	<p class="result">All games are against the computer. First one to five wins. 
-Good luck!</p>
+	<p class="result">All games are against the computer. First one to five wins. Good luck!</p>
 	<div class="buttons">
 		<button id="rock" class="btn">Rock</button>
 		<button id="paper" class="btn">Paper</button>
@@ -125,7 +124,7 @@ Good luck!</p>
 	button_play_again.addEventListener('click', function (e) {
 		block_buttons.style.display = 'block';
 		block_play_again.style.display = 'none';
-
+		result.textContent = 'All games are against the computer. First one to five wins. Good luck!'
 		playerWins = 0;
 		computerWins = 0;
 		scorePlayer.textContent = 0;
